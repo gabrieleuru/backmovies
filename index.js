@@ -12,7 +12,7 @@ app.use(cors({
   origin: "http://localhost:8081",
   credentials: true,
 }));
-app.use(express.json()); // Esto asegura que req.body sea parseado correctamente
+app.use(express.json());
 
 // Objeto global para almacenar los códigos de restablecimiento de contraseña
 // Estructura: { [email]: { code: "123456", expires: timestamp } }
